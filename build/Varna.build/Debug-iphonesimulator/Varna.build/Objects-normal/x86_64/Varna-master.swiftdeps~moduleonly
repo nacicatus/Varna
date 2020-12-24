@@ -1,0 +1,6 @@
+version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
+options: "fb44f6551d09945ea092c3e88a19f256"
+build_time: [1598990701, 741061000]
+inputs:
+  "/Users/yajnavalkya/Developer/Varna/Varna/ViewController.swift": [1598989352, 0]
+  "/Users/yajnavalkya/Developer/Varna/Varna/AppDelegate.swift": [1598989352, 0]

@@ -12,7 +12,25 @@
 		C1DB1D9D24FEDBA8000263C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1DB1D9B24FEDBA8000263C5 /* Main.storyboard */; };
 		C1DB1D9F24FEDBBC000263C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1DB1D9E24FEDBBC000263C5 /* Assets.xcassets */; };
 		C1DB1DA224FEDBBC000263C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1DB1DA024FEDBBC000263C5 /* LaunchScreen.storyboard */; };
+		C1DB1DB424FEE1C9000263C5 /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1DB1DB024FEE0E9000263C5 /* ResearchKit.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C1DB1DAF24FEE0E9000263C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1DB1DA924FEE0E7000263C5 /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B183A5951A8535D100C76870;
+			remoteInfo = ResearchKit;
+		};
+		C1DB1DB124FEE0E9000263C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1DB1DA924FEE0E7000263C5 /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 86CC8E9A1AC09332001CCD89;
+			remoteInfo = ResearchKitTests;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		C1DB1D9424FEDBA8000263C5 /* Varna.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Varna.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +40,7 @@
 		C1DB1D9E24FEDBBC000263C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1DB1DA124FEDBBC000263C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1DB1DA324FEDBBC000263C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1DB1DA924FEE0E7000263C5 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = "../ResearchKit-master/ResearchKit.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1DB1DB424FEE1C9000263C5 /* ResearchKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,8 +58,10 @@
 		C1DB1D8B24FEDBA7000263C5 = {
 			isa = PBXGroup;
 			children = (
+				C1DB1DA924FEE0E7000263C5 /* ResearchKit.xcodeproj */,
 				C1DB1D9624FEDBA8000263C5 /* Varna */,
 				C1DB1D9524FEDBA8000263C5 /* Products */,
+				C1DB1DB324FEE1C9000263C5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +84,22 @@
 				C1DB1DA324FEDBBC000263C5 /* Info.plist */,
 			);
 			path = Varna;
+			sourceTree = "<group>";
+		};
+		C1DB1DAA24FEE0E7000263C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C1DB1DB024FEE0E9000263C5 /* ResearchKit.framework */,
+				C1DB1DB224FEE0E9000263C5 /* ResearchKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C1DB1DB324FEE1C9000263C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,12 +148,35 @@
 			mainGroup = C1DB1D8B24FEDBA7000263C5;
 			productRefGroup = C1DB1D9524FEDBA8000263C5 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C1DB1DAA24FEE0E7000263C5 /* Products */;
+					ProjectRef = C1DB1DA924FEE0E7000263C5 /* ResearchKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				C1DB1D9324FEDBA8000263C5 /* Varna */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C1DB1DB024FEE0E9000263C5 /* ResearchKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ResearchKit.framework;
+			remoteRef = C1DB1DAF24FEE0E9000263C5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C1DB1DB224FEE0E9000263C5 /* ResearchKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ResearchKitTests.xctest;
+			remoteRef = C1DB1DB124FEE0E9000263C5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		C1DB1D9224FEDBA8000263C5 /* Resources */ = {
