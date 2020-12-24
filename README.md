@@ -1,7 +1,5 @@
 # Varna
-or else
 
-## Log
 
 
 
