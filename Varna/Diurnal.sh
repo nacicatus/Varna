@@ -2,7 +2,7 @@
 
 currentDate=`date +%s`
 
-git add -a
+git add .
 git commit -m $currentDate
 
 git push -u origin main
