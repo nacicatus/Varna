@@ -1,7 +1,7 @@
 #!/bin/bash
 
 currentDate=`date +%s`
-$currentDate >> README.md
+echo $currentDate >> README.md
 
 
 git add .
