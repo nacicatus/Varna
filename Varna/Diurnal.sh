@@ -1,7 +1,8 @@
 #!/bin/bash
 
 currentDate=`date +%s`
-$currentDate >> log.txt
+echo $currentDate >> log.txt
+echo $currentDate >> ../README.md
 
 git add .
 git commit -m $currentDate
